@@ -1,0 +1,34 @@
+# Changing window focus
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north
+#alt - h : yabai -m window --focus west
+#alt - l : yabai -m window --focus east
+
+# Moving windows around
+shift + alt - j : yabai -m window --swap south
+shift + alt - k : yabai -m window --swap north
+shift + alt - h : yabai -m window --swap west
+shift + alt - l : yabai -m windows --swap east
+
+# rotate layout clockwise
+shift + alt - r : yabai -m space --rotate 270
+
+
+# rotate through stacked layout
+alt - h : yabai -m window --focus stack.prev || yabai -m window --focus prev || yabai -m window --focus last
+alt - l : yabai -m window --focus stack.next || yabai -m window --focus next || yabai -m window --focus first
+
+# Float / Unfloat window
+shift + alt - space : \
+    yabai -m window --toggle float; \
+    yabai -m window --toggle border
+
+# stop/start/restart yabai
+ctrl + alt - q : yabai --stop-service
+ctrl + alt - s : yabai --start-service
+ctrl + alt - r : yabai --restart-service
+
+# start/stop/restart skhd
+shift + ctrl + alt - q : skhd --stop-service
+shift + ctrl + alt - s : skhd --start-service
+shift + ctrl + alt - r : skhd --restart-service

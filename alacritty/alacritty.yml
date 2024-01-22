@@ -3,7 +3,7 @@
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty it self.
-# env:
+env:
 # TERM env customization.
 #
 # If this property is not set, alacritty will set it to xterm-256color.
@@ -11,7 +11,7 @@
 # Note that some xterm terminfo databases don't declare support for italics.
 # You can verify this by checking for the presence of `smso` and `sitm` in
 # `infocmp xterm-256color`.
-# TERM: xterm-256color-italic
+  TERM: xterm-256color
 
 window:
   # Window dimensions (changes require restart)
@@ -68,23 +68,23 @@ scrolling:
 # Font setup Cozette
 font:
   normal:
-    family: CozetteHiDpi
-    style: Medium
+    family: ProggyClean Nerd Font
+    #family: GohuFont Nerd Font
+  
+  #bold:
+  #  family: cozettehidpi
+  #  style: bold
+  #
+  #italic:
+  #  family: cozettehidpi
+  #  style: italic
+  #
+  #bold_italic:
+  #  family: CozetteHiDpi
+  #  style: Bold Italic
 
-  bold:
-    family: CozetteHiDpi
-    style: Bold
-
-  italic:
-    family: CozetteHiDpi
-    style: Italic
-
-  bold_italic:
-    family: CozetteHiDpi
-    style: Bold Italic
-
-  # Point size of the font
-  size: 18
+# Point size of the font
+  size: 22
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
